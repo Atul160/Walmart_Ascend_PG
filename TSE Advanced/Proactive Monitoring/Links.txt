@@ -1,0 +1,44 @@
+https://forms.office.com/r/LtzNHyRwi4
+
+https://github.com/agarwalpoonam01/Prometheus-Handson-session.git
+
+git clone https://github.com/agarwalpoonam01/Prometheus-Handson-session.git
+
+Unmounting Virtualbox Guest Additions ISO from: /mnt umount: /mnt: not mounted. ==> prometheus: Checking for guest additions in VM... The following SSH command responded with a non-zero exit status. Vagrant assumes that this means the command failed! umount /mnt Stdout from the command: Stderr from the command: umount: /mnt: not mounted.
+
+vagrant up --provision
+
+config.vbguest.installer_options = { allow_kernel_upgrade: true }
+
+vagrant plugin uninstall vagrant-vbguest
+
+The SSH command responded with a non-zero exit status. Vagrant assumes that this means the command failed. The output for this command should be in the log above. Please read the output to determine what went wrong.
+
+The SSH command responded with a non-zero exit status. Vagrant assumes that this means the command failed. The output for this command should be in the log above. Please read the output to determine what went wrong.
+
+0230909-65924-hb40z6.sh ==> prometheus: Running provisioner: shell... prometheus: Running: C:/Users/s0r08nj/AppData/Local/Temp/vagrant-shell20230909-65924-3bu86n.sh prometheus: /vagrant/utils/helpers.sh: line 2: $'\r': command not found The SSH command responded with a non-zero exit status. Vagrant assumes that this means the command failed. The output for this command should be in the log above. Please read the output to determine what went wrong.
+
+
+bento/ubuntu-18.04
+
+
+https://codeshare.io/K8KXgX
+https://codeshare.io/Jbe0x6
+
+https://github.com/prometheus/prometheus/releases/download/v2.47.0/prometheus-2.47.0.windows-amd64.zip
+
+https://github.com/prometheus-community/windows_exporter/releases/download/v0.23.1/windows_exporter-0.23.1-amd64.exe
+
+https://dl.grafana.com/enterprise/release/grafana-enterprise-10.1.1.windows-amd64.zip
+
+MAC______________ https://grafana.com/grafana/download?platform=mac
+
+https://github.com/prometheus/prometheus/releases/download/v2.47.0/prometheus-2.47.0.darwin-amd64.tar.gz
+
+https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.darwin-amd64.tar.gz
+
+https://github.com/prometheus/alertmanager/releases/download/v0.26.0/alertmanager-0.26.0.darwin-amd64.tar.gz
+
+https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/blackbox_exporter-0.24.0.darwin-amd64.tar.gz 
+https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/blackbox_exporter-0.24.0.windows-amd64.zip
+

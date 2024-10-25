@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <script>
+        console.log(document.firstChild);
+
+        function fnChangeColor(color) {
+            document.body.setAttribute("bgcolor", color);
+        }
+
+        function fnChangeImage(image) {
+            document.getElementById("myimage").src = "./images/" + image;
+        }
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <p>This is para</p>
+
+    <script>
+        let para1 = document.getElementsByTagName('p')[0];
+        console.log(para1);
+        console.log("Node value " + para1.firstChild.nodeValue);
+        console.log("Node Name " + para1.firstChild.nodeName);
+
+        let _bgColor = document.body.attributes.bgcolor.nodeValue;
+        let _bgColor1 = document.body.getAttribute("bgcolor");
+
+        console.log(_bgColor);
+        console.log(_bgColor1);
+
+    </script>
+
+
+    <button type="button" onmouseover="fnChangeColor('red')">Red</button>
+    <button type="button" onmouseover="fnChangeColor('blue')">Blue</button>
+    <button type="button" onmouseover="fnChangeColor('green')">Green</button>
+    <button type="button" onmouseover="fnChangeColor('cyan')">Cyan</button>
+    <button type="button" onmouseover="fnChangeColor('yellow')">Yellow</button>
+
+
+    <hr>
+
+    <img src="./images/mickey.jpg" alt="mickey" id="myimage" width="250" height="250">
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td><img src="./images/mickey.jpg" alt="micket" onmouseover="fnChangeImage('mickey.jpg')" width="150"
+                    height="150"></td>
+            <td><img src="./images/minnie.png" alt="micket" onmouseover="fnChangeImage('minnie.png')" width="150"
+                    height="150"></td>
+            <td><img src="./images/cheetah.jpeg" alt="micket" onmouseover="fnChangeImage('cheetah.jpeg')" width="150"
+                    height="150"></td>
+            <td><img src="./images/lion.jpg" alt="micket" onmouseover="fnChangeImage('lion.jpg')" width="150"
+                    height="150">
+            </td>
+            <td><img src="./images/tiger.jpeg" alt="micket" onmouseover="fnChangeImage('tiger.jpeg')" width="150"
+                    height="150"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

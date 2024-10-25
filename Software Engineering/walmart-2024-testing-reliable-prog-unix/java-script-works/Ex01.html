@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my site</title>
+
+    <script type="text/javascript">
+        console.log("hi i'm from head section")
+    </script>
+
+    <script src="./sample.js"></script>
+
+    <style type="text/css">
+        h1 {
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>How are you today </h1>
+    <script type="text/javascript">
+        console.log("hi i'm from body section")
+        fnFirst();
+    </script>
+
+    <button type="button" onclick="fnFirst()">Click Me</button>
+    <input type="button" value="ClickMe" onclick="fnFirst()">
+
+    <button type="button" onclick="fnSecond('Naveen')">Say Hi</button>
+    <button type="button" onclick="fnThird()">Say Hi To Array </button>
+    <button type="button" onclick="fnGetData()">Say Hi To API </button>
+    <button type="button" onclick="fnDatatypes()">DataTypes </button>
+    <button type="button" onclick="fnCheckVote()">FnCheckVote </button>
+    <button type="button" onclick="fnEqualCheck()">fnEqualCheck </button>
+    <button type="button" onclick="fnOverLoad()">fnOverLoad </button>
+    <button type="button" onclick="fnOverLoad('parameter')">fnOverLoad </button>
+    <button type="button" onclick="fnOverLoad('parameter', 'param1', 'param2')">fnOverLoad </button>
+    <noscript>Sorry please enable javascript </noscript>
+
+</body>
+
+</html>

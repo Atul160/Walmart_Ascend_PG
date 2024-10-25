@@ -1,0 +1,186 @@
+GET http://localhost:9200/_cat/indices HTTP/1.1
+
+
+###
+
+
+PUT http://localhost:9200/employees?pretty HTTP/1.1
+
+###
+# to show the details of employees index 
+GET http://localhost:9200/employees/_search HTTP/1.1
+
+
+###
+# to show the data of employees index 
+GET http://localhost:9200/employees/_search/?pretty&q=*:* HTTP/1.1
+
+
+### 
+
+PUT http://localhost:9200/employees1?pretty HTTP/1.1
+Content-Type: application/json
+
+{
+    "mappings" :{
+        "properties" :{
+            "id": {"type":"integer"}, 
+            "name": {"type":"text"}, 
+            "salary": {"type":"double"}, 
+            "city": {"type":"text"}, 
+            "state": {"type":"text"}, 
+            "desig": {"type":"text"}
+        }
+    }
+}
+
+
+###
+
+POST http://localhost:9200/employees1/_doc?pretty HTTP/1.1
+Content-Type: application/json
+
+{
+    "values" :[
+        {
+  "id": 1,
+  "name": "Blakelee",
+  "salary": "96058",
+  "city": "Sacramento",
+  "state": "California",
+  "desig": "Engineer"
+}, {
+  "id": 2,
+  "name": "Carroll",
+  "salary": "0713",
+  "city": "Los Angeles",
+  "state": "California",
+  "desig": "Estimator"
+}, {
+  "id": 3,
+  "name": "Cecilla",
+  "salary": "8",
+  "city": "Fresno",
+  "state": "California",
+  "desig": "Architect"
+}, {
+  "id": 4,
+  "name": "Goldia",
+  "salary": "3433",
+  "city": "Burbank",
+  "state": "California",
+  "desig": "Construction Expeditor"
+}, {
+  "id": 5,
+  "name": "Juan",
+  "salary": "39",
+  "city": "Los Angeles",
+  "state": "California",
+  "desig": "Estimator"
+}, {
+  "id": 6,
+  "name": "Fidelity",
+  "salary": "09",
+  "city": "Sacramento",
+  "state": "California",
+  "desig": "Engineer"
+}, {
+  "id": 7,
+  "name": "Emelina",
+  "salary": "26085",
+  "city": "Sunnyvale",
+  "state": "California",
+  "desig": "Subcontractor"
+}, {
+  "id": 8,
+  "name": "Sayre",
+  "salary": "30520",
+  "city": "San Diego",
+  "state": "California",
+  "desig": "Architect"
+}, {
+  "id": 9,
+  "name": "Nevsa",
+  "salary": "5",
+  "city": "San Jose",
+  "state": "California",
+  "desig": "Surveyor"
+}, {
+  "id": 10,
+  "name": "Faber",
+  "salary": "7",
+  "city": "Sacramento",
+  "state": "California",
+  "desig": "Electrician"
+}, {
+  "id": 11,
+  "name": "Devondra",
+  "salary": "3014",
+  "city": "Irvine",
+  "state": "California",
+  "desig": "Estimator"
+}, {
+  "id": 12,
+  "name": "Kellsie",
+  "salary": "96",
+  "city": "North Hollywood",
+  "state": "California",
+  "desig": "Surveyor"
+}, {
+  "id": 13,
+  "name": "Emalia",
+  "salary": "4",
+  "city": "Pasadena",
+  "state": "California",
+  "desig": "Engineer"
+}, {
+  "id": 14,
+  "name": "Edd",
+  "salary": "9474",
+  "city": "San Jose",
+  "state": "California",
+  "desig": "Architect"
+}, {
+  "id": 15,
+  "name": "Susana",
+  "salary": "39219",
+  "city": "Carlsbad",
+  "state": "California",
+  "desig": "Surveyor"
+}, {
+  "id": 16,
+  "name": "Mahala",
+  "salary": "98",
+  "city": "San Jose",
+  "state": "California",
+  "desig": "Project Manager"
+}, {
+  "id": 17,
+  "name": "Laurianne",
+  "salary": "072",
+  "city": "Stockton",
+  "state": "California",
+  "desig": "Construction Foreman"
+}, {
+  "id": 18,
+  "name": "Dorise",
+  "salary": "09520",
+  "city": "Sacramento",
+  "state": "California",
+  "desig": "Construction Foreman"
+}, {
+  "id": 19,
+  "name": "Sasha",
+  "salary": "59809",
+  "city": "Santa Clara",
+  "state": "California",
+  "desig": "Supervisor"
+}, {
+  "id": 20,
+  "name": "Shannah",
+  "salary": "9",
+  "city": "San Francisco",
+  "state": "California",
+  "desig": "Construction Worker"
+}]
+}
