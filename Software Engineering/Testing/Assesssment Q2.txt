@@ -1,0 +1,91 @@
+Scenario 1: Customer Checkout with Split Payment
+Description: A customer selects multiple items and proceeds to checkout, opting to pay with two methods—half with a credit card and the remaining balance with a gift card.
+
+Test Cases for Split Payment Checkout
+Verify Cart Calculation Accuracy
+
+Precondition: The customer has selected multiple items, and the total cost is displayed correctly.
+Steps: Verify the cart’s subtotal, taxes, and discounts (if any) before the split payment.
+Expected Result: The total amount matches the itemized costs.
+Test Credit Card Payment Validation
+
+Steps:
+The customer selects credit card as the first payment option.
+They enter valid credit card details and specify the amount (half of the total).
+Expected Result: The system validates the credit card details, and the specified amount is charged successfully. An error message is shown if the card details are invalid.
+Test Gift Card Payment Validation
+
+Steps:
+The customer selects gift card as the second payment method for the remaining balance.
+They enter the gift card code and complete the payment.
+Expected Result: The gift card is validated, and the remaining balance is deducted. If the gift card balance is insufficient, an error message is shown.
+Verify Transaction Completeness and Order Confirmation
+
+Steps:
+After both payment methods are processed, check if the order is confirmed.
+Ensure a confirmation message, receipt, or order number is generated.
+Expected Result: The order is confirmed, and a receipt is generated, showing the split payment details, itemized costs, and payment methods used.
+Verify Payment Record in Transaction Logs
+
+Steps: Check transaction logs or the backend database for entries related to the credit card and gift card payments.
+Expected Result: The transaction log accurately reflects both payments, with the correct amounts, payment methods, and timestamps.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Scenario 2: Inventory Discrepancies on Mobile App After Restock
+Description: An inventory manager updates stock levels after a restock, but discrepancies are observed in the mobile app quantities for certain products.
+
+Steps to Identify and Resolve Inventory Discrepancies
+Check Inventory Update on Backend
+
+Step: Verify if the backend system has the correct stock levels for the updated products.
+Purpose: Ensures that the data entered by the manager is reflected correctly on the backend.
+Sync Check Between Backend and Web/Mobile App
+
+Step: Ensure the web and mobile applications are syncing data accurately from the backend.
+Purpose: Confirms there is no delay or data inconsistency due to network issues, caching, or server sync issues.
+Examine API Calls and Responses
+
+Step: Review API requests and responses to identify any discrepancies in the data being sent to the mobile app.
+Purpose: Detects any issues in the API that could cause inaccurate data display in the app.
+Verify Data Cache and Refresh Rate
+
+Step: Check if the mobile app is caching outdated data and confirm that the cache is refreshing after an inventory update.
+Purpose: Ensures the app displays the latest data from the server.
+Test Cases for Inventory Sync Across Web and Mobile Applications
+Test Backend Inventory Update After Restock
+
+Steps:
+Perform a restock and update quantities for specific products.
+Check the backend inventory system to confirm the update is recorded.
+Expected Result: The backend system shows the updated quantities accurately.
+Verify Real-Time Sync on Web Application
+
+Steps:
+Update inventory quantities on the backend.
+Check if the updated quantities are reflected on the web application.
+Expected Result: The web app displays the new stock levels without delay.
+Verify Real-Time Sync on Mobile Application
+
+Steps:
+Update inventory quantities on the backend.
+Refresh the mobile app and check the updated stock levels.
+Expected Result: The mobile app displays the correct stock levels, consistent with the backend and web app.
+Test Offline Mode and Cache Refresh on Mobile App
+
+Steps:
+Simulate an offline scenario in the mobile app and view product stock levels.
+Go online and check if stock levels refresh accurately.
+Expected Result: The app shows cached data when offline but updates to the latest data when back online.
+Test API Response for Inventory Updates
+
+Steps:
+Trigger an inventory update and inspect the API response sent to the mobile app.
+Confirm that the API response includes the correct stock levels.
+Expected Result: The API response correctly reflects the new stock levels.
+Test Discrepancy Alert for Inventory Managers
+
+Steps:
+Make an intentional incorrect inventory update on the mobile app.
+Check if the system identifies and notifies the inventory manager of a discrepancy.
+Expected Result: The system flags significant discrepancies and prompts verification by the manager.

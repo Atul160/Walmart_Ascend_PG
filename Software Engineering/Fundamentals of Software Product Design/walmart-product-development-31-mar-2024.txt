@@ -1,0 +1,247 @@
+- Hasan - software development how it happens 
+
+- karthees - working as cloud dba, working with devops too, learning the programming structures of development 
+
+- lingraj - dev prod team, at infra level, helps data takes to application level, to take backup and ransome ware etc, few features how to enhance the application 
+
+- Nithin - working forecasting the sales, knows basics of production and looking for indepts 
+
+- Rakesh - from pmp, looking for infra of the walmart, how the project runs mostly, understand software part of it 
+
+- Atul - part of platform, takes care of virutal infra, dev and maintain of application, need refreshers on programming BE/FE 
+
+- Venkatarami - enhnace development skills 
+
+- adarsh - manage MS 565 clouds, works with power scripts and integrate application, good to know software development and crux behind 
+
+- lakshmi narayana - have worked with devops, interested in coding knowledge 
+
+- Karthik - interested in understand of front end part 
+
+- Diwya - works with SAP, works more towards function interested on technology, cross skilling 
+
+- Aravinthraj - 
+
+- Atul pahlazani - part of platform team, has exp in scripting, interested in fullstack life cycle and front end 
+
+
+
+
+
+- Software Products	
+
+- Introduction to software product management, 
+Types of softwares, 7 categories of softwares, 
+- Introduction to platform and management 
+- Understanding the need of prototype before building the application, Introduction to figma/sketch, 
+- Creating wireframe of UI 
+
+
+
+
+- Code 
+	- function requirement 
+	
+- No Code 
+	- Engineering practices 
+		- NFR 
+			- coding practices 
+			- uptime of application almost 99.999%
+			- through put + latency 
+			- Security 
+			- SSl
+			- replication 
+			- 5g edge computing etc.... 
+			- it works fine with any browers + mobile + tablet + fablet etc 
+
+
+- Agile practices 
+	- Project v/s Product 
+
+
+
+- Is responsible for delivering products and services that make customers happy and drive business growth.
+			
+1. product stability 
+2. less development time 
+3. less downtime 
+4. customer satisfaction 
+	4.1 less downtime 
+	4.2 good support system 
+	4.3 order issues  
+	4.4 customer should get every thing in 1 place 
+	4.5 when you search for the product have related information 
+	
+	4.6 user interface (UX) - HIFI - which closely matches to the reality (product design)
+		- figma, sketch, draw.io etc etc 
+	4.7 UI - Laptop, Desktop, Mobile, tablet, fablet  etc 
+	4.8 ease of access (quickly, or min number of clicks)
+	4.9 AI Driven 
+	4.10 last mile notification 
+	4.11 the product availabiliy is important 
+	
+5. data security 
+6. product manager is the bridge between customer and developer 
+	
+Product Management is not only about thinking current stage rather to think near future 
+
+1. how we can expand - with geo location etc etc 
+2. how to integrate application with other tools 
+ 	
+
+
+Maturity of the application (C, D, VP etc)
+	- writing java code is needed 
+
+
+- Growth 
+	- enhancing features 
+	- Market research 
+	- using cutting edge technologies 
+	- customer experience 
+	
+- Maturity 
+	- using language for compatability 
+	- where to stop 
+	- DRY, WORM 
+	- when we have more acceptance 
+	
+- decline
+	- we had better application to switch 
+		- promotions
+		- new offer 
+		- easy interface 
+		- cost factor 
+		- GDPR (https://gdpr-info.eu/)
+		- https://owasp.org/www-project-top-ten/ 
+	
+	
+- strategy 
+	- marketing 
+	- internet scalable application (enterprise scalable)
+	- you have to know the competators + start comparating 
+	- offers 
+	- coupons 
+	- discounts 
+	- the feature not much used by the customer for long period 
+	- 
+		
+Road Map
+		- Business Requirement 
+		- Product to be developed 
+		- product to be in market 
+		- customer support 
+		- Design 
+		- Time line 
+		- Milestones 
+		- Testing 
+		- Regular checkpoints 
+		
+Where to stop/freeze your requirement (Yes/No)
+
+
+- Feature Definations 
+
+- BDD - Behaviour Driven Development 
+- DDD - Domain Driven Development 
+- MDD - Model Driven Development 
+
+- TDD - Test Driven Development 
+
+Writing a feature 
+
+Given - PreCondition 
+When - Actuals 
+Then - Post Conditon 
+And - Multiple 
+Then - Excuses 
+
+
+Given the application is loaded when you enter http://walmart.com 
+When the page is landed 
+Then on top of the screen there is menu bar which shall have icons of 
+	company logo (left top corner)
+	Search bar (60% of the screen) 
+	User logged in or not on top right corner 
+
+
+Assignment: 
+	We shall have 2 features written from walmart site 
+	
+
+
+
+What does Product Manager do? 
+
+Technical Capable 
+	Backend - How applications can be integrated, find possilities to integrate, future ready, vulnarabilities free, fast, good through put etc 
+	
+	Frontend - Intutive design, device compatible, HIFI, LOFI, ease of use, i18n, lite version, mobile first development strategy etc.. 
+	
+	DevOps - containarizing, orchestrating, building pipleline for faster deployment etc... 
+	
+	Database - storatge (columnar/document etc), dealing with high volume of data, cahcing the data, edge storage etc. 
+	
+Function Capable 
+	Analytical - should be able to gather the data and convert to information to solve given problem. 
+	
+	Application Functining - you might have to check in different scenarios, different devices, diff geo location for proper function 
+	
+	Leadership - able to handle team to finish feature within timeline Communication to the teams - Able to inform team about the need of the new feature 
+	
+	Communication to the teams
+	Reaserch - performing POC's based on requirement, market reserach, customer experience, feedback etc 
+	
+	Technofunctional Capability  - should be able to understand /knowledgeable on tech stack used to develop the feature
+	
+	Financial Skills - Should understand the financial implications of the product, able to understanding the techstack which is been used + justify + FinOps 
+	
+	Decisive Communication to the teams - Should be able to articulate the requirements clearly and possess negotiation skills
+	
+	
+Business Capable 
+	Market 
+	Sales 
+	Competitive Intelligence 
+	Industry trends 
+	Strategic Thinking 
+	Feedback 
+
+
+MVP - Minimum Viable Product 
+
+
+
+Product Manager
+Product Owner  
+
+
+Function Capable Analytical - able to understand the requirement and convey it in detail in understanding manner Application Functioning - Leadership - 
+
+3
+
+Reaserch - performing POC's based on requirement Technofunctional Capability - should be able to understand /knowledgeable on tech stack used to develop the feature Financial Skills- able to understanding the techstack which is been used + justify 
+
+
+
+Project comprises of multiple intention, and product comprises of single intention 
+
+
+What is not product management 
+
+- product managmenet is not project management 
+- you are responsible for product's vision, strategy, road map, overseeing the product, life cycle etc... 
+- you shall not have many things from cross functional dependencies and not meet the dead line 
+
+
+
+
+
+Breakdown user stories 
+
+1. fibonacci 
+2. doubling 
+
+
+
+

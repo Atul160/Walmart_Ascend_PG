@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="1" y="1" width="32" height="32" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_260" data-name="Scroll Group 260" transform="translate(-1 -1)" clip-path="url(#clip-path)" style="mix-blend-mode: normal;isolation: isolate">
+    <g id="Group_52552" data-name="Group 52552" transform="translate(-1739 -353.1)">
+      <path id="Path_33021" data-name="Path 33021" d="M25.529,224h-16A3.541,3.541,0,0,0,6,227.529v19.765a.706.706,0,0,0,.706.706H23.647a.706.706,0,0,0,0-1.412H7.412v-.235a2.13,2.13,0,0,1,2.118-2.118h16a.7.7,0,0,0,.706-.706V224.706a.706.706,0,0,0-.706-.706Zm-10.588,1.412h6.118v9.176l-2.635-1.976a.706.706,0,0,0-.847,0l-2.635,1.976Zm9.882,17.412H9.529a3.494,3.494,0,0,0-2.118.705v-16a2.128,2.128,0,0,1,2.118-2.117h4V236a.7.7,0,0,0,.769.706.716.716,0,0,0,.361-.141L18,234.059l3.341,2.506a.71.71,0,0,0,.424.141.775.775,0,0,0,.318-.071.728.728,0,0,0,.388-.635V225.412h2.353Z" transform="translate(1740 134.1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

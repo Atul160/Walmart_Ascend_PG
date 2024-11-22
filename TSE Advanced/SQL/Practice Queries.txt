@@ -1,0 +1,26 @@
+1. Write a Query(W.A.Q) to display all employees who joined on the same date as JAMES,but don’t display James name in output
+
+2. w.a.q to display all employees whose name starts with J or A
+
+3.w.a.q to display ename,hiredate of all emp who joined in 1981
+
+4.w.a.q to display ename,hiredate of all employees who has joined in 3rd month
+
+5.w.a.q to display empname,salary of all employees whose salary not in range of 300 and 800
+
+6.w.a.q to display ename,salary,hiredate of James and Taylor.display in descending order of hiredate
+
+7.w.a.q to display empname,salary of all employees whose salaryin range of 300 and 800 and works in dept 20 or 30
+
+8.w.a.q to display all employees who doesnot have a manager
+
+9.w.a.q to display all employees who work in the same dept as that of a employee whose name starts with A
+
+10.w.a.q to display all employees who reports to king
+
+11.w.a.q to display all employees who work in Operations dept.
+
+
+
+Note:The queries given are based on the tables in dataset.
+

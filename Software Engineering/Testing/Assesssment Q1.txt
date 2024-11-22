@@ -1,0 +1,99 @@
+Unit testing involves testing individual components or functions of the codebase in isolation, usually at the method or class level. It ensures that each small unit of code behaves as expected. Developers typically perform unit testing, often using mock objects to isolate the component being tested from dependencies.
+
+Example: Testing the calculateDiscount method in a DiscountService class, which applies a discount based on the user’s membership level.
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class DiscountServiceTest {
+    @Test
+    public void testCalculateDiscount() {
+        DiscountService discountService = new DiscountService();
+        assertEquals(80.0, discountService.calculateDiscount(100.0, "GOLD"));
+        assertEquals(90.0, discountService.calculateDiscount(100.0, "SILVER"));
+        assertEquals(100.0, discountService.calculateDiscount(100.0, "BRONZE"));
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Integration testing verifies that multiple components or systems work together as expected. It focuses on the interaction between units, modules, or systems. Integration testing often uses databases, APIs, or other dependent services to ensure smooth data flow and functionality across integrated parts.
+
+Example: Testing the OrderService class, which integrates with PaymentService and InventoryService to place an order.
+
+import org.junit.jupiter.api.Test;
+import static org.mockito.Mockito.*;
+
+public class OrderServiceTest {
+    @Test
+    public void testPlaceOrder() {
+        PaymentService paymentService = mock(PaymentService.class);
+        InventoryService inventoryService = mock(InventoryService.class);
+
+        when(paymentService.processPayment(100.0)).thenReturn(true);
+
+        OrderService orderService = new OrderService(paymentService, inventoryService);
+        boolean orderPlaced = orderService.placeOrder(100.0, "item123");
+
+        verify(paymentService).processPayment(100.0);
+        verify(inventoryService).updateInventory("item123", -1);
+        assert(orderPlaced);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+System testing is a high-level test that validates the end-to-end functionality of the entire system. It checks if the system meets the specified requirements and behaves as expected under realistic conditions. It typically involves a fully integrated application and simulates real user interactions.
+
+Example: Assume we want to test a workflow that involves a transaction, loyalty points update, and inventory check.
+
+import org.junit.jupiter.api.Test;
+
+public class RetailManagementSystemTest {
+    @Test
+    public void testCompletePurchaseWorkflow() {
+        LoyaltyService loyaltyService = new LoyaltyService();
+        InventoryService inventoryService = new InventoryService(); // Assume real implementations
+        TransactionService transactionService = new TransactionService(loyaltyService, inventoryService);
+        RetailManagementSystem rms = new RetailManagementSystem(transactionService);
+
+        rms.completePurchase(100.0, "product123");
+        // System-level assertions or checks (using database state, API response, etc.)
+    }
+}
+In this test, the entire system workflow is tested, from purchase initiation to the integration of loyalty points and inventory management.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Acceptance testing is performed to determine if the entire system meets the business requirements and is ready for release. This testing is often done by business stakeholders, end users, or QA teams to verify that the system functions as intended in real-world conditions.
+
+Example: Using Cucumber to test a user journey where a customer places an order and receives a loyalty point update.
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class OrderSteps {
+    private RetailSystem retailSystem;
+    private String confirmationMessage;
+    private LoyaltyService loyaltyService = new LoyaltyService();
+
+    @Given("a customer with loyalty ID {string}")
+    public void a_customer_with_loyalty_id(String loyaltyId) {
+        // Assume customer setup logic here
+    }
+
+    @When("they place an order of ${double} for {string}")
+    public void they_place_an_order(double amount, String productId) {
+        confirmationMessage = retailSystem.processOrder(amount, productId);
+    }
+
+    @Then("the order confirmation message should be {string}")
+    public void the_order_confirmation_message_should_be(String message) {
+        assertEquals(message, confirmationMessage);
+    }
+
+    @Then("their loyalty points should increase by {int}")
+    public void their_loyalty_points_should_increase_by(int points) {
+        // Assume points update validation
+        assertEquals(points, loyaltyService.getPoints("12345"));
+    }
+}
